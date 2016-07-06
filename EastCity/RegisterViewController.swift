@@ -46,20 +46,20 @@ class RegisterViewController: UIViewController {
     print("获取验证码")
         SMSSDK.getVerificationCodeByMethod(SMSGetCodeMethod.init(0), phoneNumber: PhnneNum.text, zone: "86", customIdentifier: "") { (error) -> Void in
             if(error == nil) {
-                print("获取成功")
+                print("获取成功"    )
             }else{
-                print("获取失败")
+                print("获取失败"   )
             }
         }
     }
     func tapp1(){
         
-        SMSSDK.commitVerificationCode(TestNum.text, phoneNumber: PhnneNum.text, zone: "86") {
+        SMSSDK.commitVerificationCode(   TestNum.text, phoneNumber: PhnneNum.text, zone: "86") {
             (error) -> Void in
             if(error == nil) {
                 print("验证成功")
             }else{
-                print("错误信息：%@",error)
+                print("错误信息：%@",   error)
             }
         }
         print("返回上一页,输入的验证码错误，可以alert提醒一下，没有写")
