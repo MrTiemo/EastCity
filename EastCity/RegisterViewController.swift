@@ -66,3 +66,4 @@ class RegisterViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
+//呵呵哒
